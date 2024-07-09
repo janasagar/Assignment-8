@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="TestOnSafari(failed)">
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="testsuite.heroku">
+        <methods>
+          <include name="login"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testsuite.heroku -->
+    </classes>
+  </test> <!-- TestOnSafari(failed) -->
+  <test thread-count="4" parallel="tests" name="TestOnIE(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="testsuite.heroku">
+        <methods>
+          <include name="login"/>
+          <include name="setup"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testsuite.heroku -->
+    </classes>
+  </test> <!-- TestOnIE(failed) -->
+</suite> <!-- Failed suite [Suite] -->
